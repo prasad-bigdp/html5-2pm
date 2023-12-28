@@ -1,0 +1,25 @@
+*
+{
+    box-sizing: border-box;
+   
+}
+.outer
+{
+    border: 2px solid red;
+    border-top-left-radius: 20px;
+   margin: 20px;
+   box-shadow: 10px 5px black;
+    
+}
+.inner{
+    border: 1px solid green;
+    padding:20px;
+    margin: 10px;
+ display: inline-block;
+ 
+}
+
+#para
+{
+    clear: both;
+}

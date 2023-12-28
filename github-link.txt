@@ -1,1 +1,19 @@
 github link:  https://github.com/prasad-bigdp/html5-2pm
+
+step 1: Download git and install it
+while installing, it willl show you default editor,choose vs code
+
+step2:create a github account and create an empty repository
+
+step3: create folder and check vs code signin and open terminal in vscode
+
+step 4: enter following commmands
+git init
+git add .
+git commit -m "message"
+(git config --global user.email "ur email"
+git config --global user.name "ur username")
+git commit -m "message"
+git remote add origin "link"(git remote already exists,
+git remote remove origin)
+git push -u origin main( src ref not found)

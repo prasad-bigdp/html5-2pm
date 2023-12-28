@@ -1,0 +1,57 @@
+
+/*pseudo classes*/
+/* p::first-line
+{
+    font-size: 50px;
+    color: red;
+}
+#para1::after
+{
+    content:"hellooo"
+} */
+/*pseudo selectors */
+button
+{
+    height: 50px;
+    width: 100px;
+    background-color: black;
+    color: white;
+}
+button:hover
+{
+    background-color: antiquewhite;
+    color: black;
+}
+
+a:active
+{
+    background-color: green;
+}
+a:visited
+{
+    color: pink;
+}
+.inp:focus
+{
+    border: 1px solid blue;
+}
+
+/* .inner:nth-child(odd)
+{
+    background-color: red;
+} */
+/* a couple have  4 childern x(male),y(female),x2(male),x3(male)*/
+p:nth-last-of-type(2)
+{
+    background-color: green;
+}
+
+input{
+    background-color: red;
+}
+
+
+
+
+
+

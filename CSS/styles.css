@@ -3,6 +3,9 @@ body
    /* background: radial-gradient(red,green,red,green,red,green);
    background-size: cover; */
 }
+*
+{
+    box-sizing: border-box;}
 #h
 {
     color: red;
@@ -30,4 +33,19 @@ img
 {
     height: 200px;
     width: 500px;
+}
+#outer
+{
+    height: 300px;
+    border: 2px solid brown;
+    border-radius:20px;
+    
+}
+.inner{
+    height: 300px;
+    width: 100px;
+    border: 2px solid black;
+    display: inline-block;
+ padding: 100px 0px;
+    margin: 20px;
 }

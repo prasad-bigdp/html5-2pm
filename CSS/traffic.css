@@ -1,0 +1,38 @@
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: honeydew;
+}
+.pole
+{
+    border: 2px solid black;
+    height: 50vh;
+    width: 15vw;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+}
+.light
+{
+    border: 1px solid black;
+    height: 80px;
+    width: 80px;
+    border-radius: 100px;
+    background-color: black;
+}
+.light:nth-child(1):hover{
+    background-color: red;
+}
+.light:nth-child(2):hover{
+    background-color: orange;
+}
+.light:nth-child(3):hover{
+    background-color: green;
+}
