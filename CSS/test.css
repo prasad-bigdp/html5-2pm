@@ -5,21 +5,54 @@
 }
 .outer
 {
+    margin: 100px;
     border: 2px solid red;
-    border-top-left-radius: 20px;
-   margin: 20px;
-   box-shadow: 10px 5px black;
-    
 }
 .inner{
-    border: 1px solid green;
-    padding:20px;
-    margin: 10px;
- display: inline-block;
- 
+    height: 100px;
+    width: 100px;
+}
+.i1
+{
+    background-color: blue;
+    /* positions are five  static,absolute, relative,fixed,sticky*/
+    
+}
+.i2
+{
+    background-color: green;
+}
+.i3
+{
+    background-color: red;
+}
+.i4
+{
+    background-color: brown;
 }
 
-#para
+
+.i1
 {
-    clear: both;
+ transition:3s all ease-in-out;
+    
 }
+.i1:hover
+{
+    background-color: red;
+    height: 300px;
+    width: 300px;
+    border-radius: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

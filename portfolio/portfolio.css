@@ -1,0 +1,145 @@
+
+*
+{
+    box-sizing: border-box;
+   font-family: 'DM Sans', sans-serif;
+font-family: 'Grenze Gotisch', serif;
+font-family: 'Jost', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Nunito', sans-serif;
+}
+header{
+    background-color:black;
+padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+.menu ul
+{
+ display: flex; 
+ gap: 20px;
+ justify-content: center;
+ align-items: center;
+ height: 80%
+}
+.menu li
+{
+   padding: 10px;
+}
+.menu li a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+}
+.menu li a:hover{
+    color:grey
+}
+#home
+{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:100px ;
+}
+.right img
+{
+    width: 400px;
+    height: 400px;
+}
+.left
+{
+    padding:0 50px;
+}
+.heading
+{
+font-size: 80px;
+margin: 0px;
+}
+.sub-heading
+{
+    font-size:48px;
+    margin: 0px;
+}
+.sub-heading span
+{
+    color:grey;
+}
+.data
+{
+    font-size: 24px;
+    color: black;
+    text-align: justify;
+}
+button
+{
+    background-color: black;
+    color: white;
+    border-radius:10px;
+    padding: 10px;
+    margin:0 20px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+button:hover
+{
+    background-color: grey;
+    color:white;
+    border: 1px solid grey;
+}
+#about
+{
+    padding: 50px 100px;
+}
+.title
+{
+    font-size: 48px;
+    text-align: center;
+     text-decoration: underline;
+     text-decoration-color: grey;
+}
+#about p
+{
+    padding: 0 50px;
+    text-align: justify;
+}
+.projects
+{
+    padding: 50px 100px;
+}
+.projects-div
+{
+    padding: 0px 100px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.project
+{
+    box-shadow: 5px 5px grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+
+}
+#contact
+{
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer
+{
+    background-color: black;
+    width: 100%;
+    height: 250px;
+    color: white;
+    text-align: center;
+}
