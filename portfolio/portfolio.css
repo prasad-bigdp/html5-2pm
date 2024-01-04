@@ -1,19 +1,30 @@
+/* CSS3 introduced custom values*/
 
 *
 {
-    box-sizing: border-box;
+ box-sizing: border-box;
    font-family: 'DM Sans', sans-serif;
 font-family: 'Grenze Gotisch', serif;
 font-family: 'Jost', sans-serif;
 font-family: 'Lato', sans-serif;
 font-family: 'Nunito', sans-serif;
+  --primary:black;  
+  --secondary:grey;
+  
 }
+
 header{
-    background-color:black;
+    background-color:var(--primary);
 padding: 0 40px;
     display: flex;
     justify-content: space-between;
     height: 100px;
+  
+}
+header img
+{
+   height: 100px;
+   width: 200px;
 }
 .menu ul
 {
@@ -34,7 +45,7 @@ padding: 0 40px;
     font-size: 28px;
 }
 .menu li a:hover{
-    color:grey
+    color:var(--secondary)
 }
 #home
 {
@@ -65,21 +76,22 @@ margin: 0px;
 }
 .sub-heading span
 {
-    color:grey;
+    color:var(--secondary);
 }
 .data
 {
     font-size: 24px;
-    color: black;
+    color: var(--primary);
     text-align: justify;
 }
 button
 {
-    background-color: black;
+    background-color: var(--primary);
     color: white;
     border-radius:10px;
     padding: 10px;
     margin:0 20px;
+    cursor: url('./magic-wand-svgrepo-com.svg') 2 4,auto;
 }
 a{
     color: white;
@@ -87,9 +99,9 @@ a{
 }
 button:hover
 {
-    background-color: grey;
+    background-color: var(--secondary);
     color:white;
-    border: 1px solid grey;
+    border: 1px solid var(--secondary);
 }
 #about
 {
@@ -100,7 +112,7 @@ button:hover
     font-size: 48px;
     text-align: center;
      text-decoration: underline;
-     text-decoration-color: grey;
+     text-decoration-color: var(--secondary);
 }
 #about p
 {
@@ -120,7 +132,7 @@ button:hover
 }
 .project
 {
-    box-shadow: 5px 5px grey;
+    box-shadow: 5px 5px var(--secondary);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -132,14 +144,87 @@ button:hover
 {
     padding: 50px 100px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+#form
+{
+    padding: 50px;
+    box-shadow: 5px 5px black;
+}
 footer
 {
-    background-color: black;
+    background-color:var(--primary);
     width: 100%;
     height: 250px;
     color: white;
     text-align: center;
+}
+@media(max-width:480px)/*mobiles or smartphones*/
+{
+ header img{
+        width: 150px;
+        
+    }
+     header
+     {
+        flex-direction: column;
+        height: 400px;
+        gap: 10px;
+     }
+     .menu ul{
+         gap: 0px;
+         flex-direction: column;
+     }
+     #about
+     {
+        padding:0 5px;
+     }
+    .projects-div{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #home{
+        flex-direction: column;
+        
+    }
+}
+@media ((min-width:481px) and (max-width:767px))/* tablets*/
+{
+    header img{
+        width: 150px;
+        
+    }
+     header
+     {
+        flex-direction: column;
+        height: 200px;
+     }
+     .menu ul{
+         gap: 0px;
+     }
+     #about
+     {
+        padding:0 5px;
+     }
+    .projects-div{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #home{
+        flex-direction: column;
+        
+    }
+}
+@media ((min-width:768px) and (max-width:1024px))/* old Desktops*/
+{
+    .projects-div{
+        
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media ((min-width:1025px) and (max-width:1280px))/* Pc,laptops*/
+{
+}
+@media(min-width:1281px){
+/*large devices*/
 }
