@@ -85,7 +85,7 @@ margin: 0px;
     text-align: justify;
 }
 button
-{
+{   
     background-color: var(--primary);
     color: white;
     border-radius:10px;
