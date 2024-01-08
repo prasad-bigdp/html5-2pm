@@ -1,4 +1,8 @@
-:root
+
+.left h2
 {
-    --animate-iteration:infinite;
+ font-size:48px;
+}
+.left h3{
+ font-size: 30px;
 }

@@ -1,0 +1,13 @@
+1. codepen.io
+2. freefrontEnd
+/*communities*/
+3.dev.to
+4.Hashnode
+/*practice and learn*/
+5.freecodecamp
+6.frontendMentor
+7.frontendPractice
+8.cssbattle
+9.Github
+/*resources*/
+10. freepik,unsplash,lottiefiles,fontawesome
