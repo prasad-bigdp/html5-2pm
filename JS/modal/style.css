@@ -1,0 +1,26 @@
+body
+{
+    background-color: rgba(25, 65, 25, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#modal
+{
+    display: none;
+    height: 300px;
+    width: 400px;
+    box-shadow: 8px 5px 6px black;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(500px) translateY(300px);
+    
+    z-index: 200;
+}
+.close
+{
+    float:right;
+}

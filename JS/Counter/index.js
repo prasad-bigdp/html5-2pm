@@ -27,10 +27,17 @@ console.log(count.textContent)
 // 	console.log("reset called")
 // 	count.textContent = 0
 // }
+const eo = document.getElementById('eo')
+if (c % 2 == 0) {
+	eo.textContent == "Even"
+} else {
+	eo.textContent == "false"
+}
 function inc1 ()
 {
     console.log("inc1 called")
-	c=c+2
+	c = c + 2
+	
  count.textContent=c
 }
 function inc2() {

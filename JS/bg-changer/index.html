@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BG Changer</title>
+</head>
+<body>
+   <div>
+    <div style="height: 100px;width: 100px; border: 1px solid black;" id="divv"></div>
+    <button onclick="change()">Click</button>
+   </div>
+
+    <script>
+        /* i will create an array of colors and i will select randomly one color from it and display them*/
+        // let arr= ["red","blue","green","orange","yellow","aqua","black","grey"]
+        // function change()
+        // {
+        //     console.log("button clicked")
+        //      const index= Math.round(Math.random() * 10000000).toString(16)
+        //     document.body.style.backgroundColor="#"+index
+        // }
+        function change()
+        {
+            const number= Math.ceil(Math.random()*500)
+            document.getElementById('divv').style.height=number+"px"
+                        document.getElementById('divv').style.width = number+"px"
+
+
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+}
+#books
+{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap: 20px;
+}
+.book
+{
+    height: 400px;
+    width: 300px;
+    box-shadow: 5px 5px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

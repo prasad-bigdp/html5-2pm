@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        .dark
+        {
+            background: black;
+            color:white;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="divv">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, nemo quidem. Optio in obcaecati placeat impedit aspernatur quia aut dolorum sequi, praesentium, quae officia consectetur natus eveniet cupiditate alias nobis dolores magni possimus dolorem mollitia, delectus eum. Natus tempora distinctio repudiandae, amet nemo perspiciatis quidem dolorem molestias minima odio saepe?</p>
+    </div>
+    <button onclick="dark()"> <img src="https://png.pngtree.com/png-vector/20190629/ourmid/pngtree-sun-icon-design-png-image_1518941.jpg" alt=""  id="btn"></button>
+
+    <script>
+        const mainDiv = document.getElementById('divv')
+        const button= document.getElementById('btn')
+       function dark()
+       {
+          document.body.classList.toggle('dark')
+          console.log(button.getAttribute('src'))
+          if(button.getAttribute('src')=="https://png.pngtree.com/png-vector/20190629/ourmid/pngtree-sun-icon-design-png-image_1518941.jpg")
+          {
+            button.setAttribute('src','data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAY1BMVEX///8AAAD39/fg4ODy8vJsbGw9PT2/v7/R0dGwsLAcHByPj483NzdnZ2fIyMhHR0cODg5RUVF+fn7p6ekqKiq5ubmenp5CQkKFhYVhYWGlpaVYWFgkJCTX19eYmJh0dHQWFhaeO9kkAAAFIElEQVR4nM2c3YKiMAyFKRSEERDkR5EFff+nXBFxAGmb0jad72avHM/SkCanqY6jAvXCtKrPSV7+ZIScUqU/pgN6OPptSRa4NgV5h+MP2aCypojemnhL0ZPOjiIvyhmCnhytSOqSkqkoO3sWFNEqYD+kU20jyN2aI6msqQVJ9PZgSyJXK6ngcOFIulh557qGI4nUNiTRa8aRFFvZWlJOfBPSFhYkuVeeJHK2IMnxWq4mKxn8wJVkJ8T5S2dFE034mmysHT3xNdmI8Y6bCZ65wIImj12ivIgt5Kf0H18TCfE1eSJNPb6mTrB2pMEvVVxenfICv+4V5QIri+eLNFl4844iTSRC1yTYg59k6Jo8oSb81tzltL9vTujNlDig8AuWVKwJ3e1xBZXBwB1ZE2TxyAFZU8fr796csBMntw+2tHritIm/eq5wHx7A1eREEE0BriZ30+1dg9xW3SCakPc9Kqw2BzLcfgEUUSTGrYNZbv2SHHXj60CaSIKpyRF4GRM+piYPtnq4pgYszJHTlLgIHsFs+AqgJtRSuP6LoiCF1AvEmBIZZFZEVVBNmClB4EzPQMzoYE2kQdNE4aJytJYd1DCM4JUukBZ0wvzhnjsuhtC5m2G8HO5a0jz7XQrd+AaupkUNKdOXSZ1PYsOawuFLSm/8F4zherh/fUkH8qR+Mdu2u2N8p+ACb8SswVGMvk/0fmJQLkatoHfKrJ27lCiz6/dOBGdoIzNhsqF5r95z3wc5QDMMvn9TJLWOTJoaMFcSf/yM2AFZQDPMhfqn2PxxAO7rEmOh/gmkh7woUxbjLGFK1J0TZo7WZsdC2Y4nZeYQcmYlZtKBTsx0WsUsCzykU8KAgSG8+cZSgs2NOa32DLqoVXLZbWZE9wIWi+mMxDnvEaW7g1j2CXfJ0mVC7xu4sn16ySLvw0mjpnXnGUmWw7/oq2G+rOlUsnGYoavd6r5c4FCuxVqg5xUsvjQ9WyypZlS/Ku/76wcbRaZtX6G+glsO/hCtMgbH1+cVU3u6FTvDAux9/V6onb5vu1BDFemqiCLlfiPGZXR3r6e/o3iZc9y5hCHjDRtHoVSCauDfnvNSytzexrdHwl9kcJf2QlN2uznGA/RgjcdVKuA7Tm4s374q+BiEQwwPrY5rX0y2OOz4X4jfAXQVlWBdpg4cfLQmorkJgiu8Cke0PnHAv8kgRdyH2+FFvQPEdco/H9hZ6DEIknO1PAUo0v6ei4akR347XR3v3zdx6/t+coKJmT4z+98oVAp6mZ+TAWZOcVgsO2BuEYPLIhThp6NGWZYcsFEl01xWaU5TVlfjtsptsPE3szy+tim9CXQX6wf1F6LqtLGfq9d6imzazjrKKgW25wsgA83myBiepWoHoQTLA4AMyZsiYFatSs2yGhy/0toC8gwcwBUVI/A9cEuFlWCGxkoKFZ7WwUe8tAHw3nYdQagAmV8TXzrUC+xyF0XNoQHQsRFeZNUI3Nza761La5IYqAuRVP1InYbhPCuZ5zTQIVTHgbRZCrsGpcKei57UsOvR7JtkNVrI7B6ONrg7K0yMbhx8aSFXmvd1jSyh8q8whdpzQ6xh2Mnt9faDmn6sqtOYHFp9t/E45ztSXLSOabuRlPO8TSY6kJCXdVOM+KA3cRmBVgqy4sjY1KOX7DqbiBOzl029SDrm8wjhvkZRr38xk03Z1GhX9L0KNJy9Ps0yD62ufs54ZGXrHw+2fnF0+DnW2/HeBOVrK3qUl+TcR2nnqb39/wETg0iMAlZ/qQAAAABJRU5ErkJggg==')
+          }
+          else
+          {
+            button.setAttribute('src','https://png.pngtree.com/png-vector/20190629/ourmid/pngtree-sun-icon-design-png-image_1518941.jpg')
+          }
+       }
+      
+    </script>
+</body>
+</html>
