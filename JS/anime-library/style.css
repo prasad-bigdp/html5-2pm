@@ -1,0 +1,21 @@
+body{
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+#library{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+gap: 20px;
+}
+a{
+    text-decoration: none;
+}
+.anime
+{
+   height: 600px;
+   width: 200px;
+   box-shadow: 5px 5px 5px black;
+   
+}

@@ -1011,22 +1011,22 @@ console.log(books.length)
     pages: number;
     title: string;
     year: number;*/
-books.forEach(function (book)
-{
-    console.log(book)
-    const bookDiv = document.createElement('div');
-    const title = document.createElement('h2')
-    title.textContent = book.title
-    const A = document.createElement('p')
-    A.textContent = "Author: " + book.author;
-    const yr = document.createElement('p')
-    yr.textContent = "Year: " + book.year
-    const image = document.createElement('img')
-    image.src = book.imageLink
-    image.setAttribute('alt', book.title)
-    image.height = "200"
-    image.width="200"
-   bookDiv.append(image,title,A,yr)
-    bookDiv.classList.add('book')
-    mainDiv.appendChild(bookDiv)
-})
+	books.forEach(function (book) {
+		console.log(book)
+		const bookDiv = document.createElement("div")
+		const title = document.createElement("h2")
+		title.textContent = book.title
+		const A = document.createElement("p")
+		A.textContent = "Author: " + book.author
+		const yr = document.createElement("p")
+		yr.textContent = "Year: " + book.year
+		const image = document.createElement("img")
+		image.src = book.imageLink
+		image.setAttribute("alt", book.title)
+		image.height = "200"
+		image.width = "200"
+		bookDiv.append(image, title, A, yr)
+		bookDiv.classList.add("book")
+		mainDiv.appendChild(bookDiv)
+	})
+	
