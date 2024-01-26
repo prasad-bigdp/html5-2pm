@@ -1,5 +1,7 @@
 github link:  https://github.com/prasad-bigdp/html5-2pm
 
+git clone "link"
+
 step 1: Download git and install it
 while installing, it willl show you default editor,choose vs code
 
