@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <style>
+        body{
+            background-image: url('https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+        }
+      #results
+      {
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        gap: 20px;
+      }
+     .book{
+        height: 300px;
+        width: 300px;
+        box-shadow: 5px 5px 5px black;
+     }
+    </style>
+</head>
+<body>
+     <div id="results"></div>
+
+    <script>
+    const mainDiv=document.getElementById('results')
+    function fetchData()
+    {
+          fetch('http://localhost:3000/books')
+          .then(function(res){return res.json()})
+          .then(function(data){displayData(data)})
+    }
+    fetchData()
+    function displayData(data)
+    {
+        data.forEach(function(book){
+           const div= document.createElement('div')
+           div.classList.add('book')
+           const title= document.createElement('h2')
+           title.textContent= book.Title
+            const author = document.createElement('p')
+            author.textContent= book.author
+            const dlt= document.createElement('button')
+            dlt.addEventListener('click',function(){
+                fetch(`http://localhost:3000/books/${book.id}`,{
+                    method:"DELETE"
+                })
+            })
+            dlt.textContent="🗑️"
+            const updt= document.createElement('button')
+            updt.textContent="✏️"
+            updt.addEventListener('click',function(){
+                fetch(`http://localhost:3000/books/${book.id}`,{
+                    method:"PUT",
+                    body:JSON.stringify({
+                        "Title":"new Book",
+                        "author":"Prasad"
+                    })
+                })
+            })
+            div.append(title,author,dlt,updt)
+            mainDiv.appendChild(div)
+
+        })
+    }
+    
+    
+    
+    
+    
+    </script>
+</body>
+</html>
