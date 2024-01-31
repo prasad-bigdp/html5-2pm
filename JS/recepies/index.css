@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+}
+#receips{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.receipe{
+    height:500px;
+width: 400px;
+padding: 20px;
+box-shadow: 5px 5px 5px black;
+}
+.receipe img{
+    height: 100px;
+    width: 100px;
+}
