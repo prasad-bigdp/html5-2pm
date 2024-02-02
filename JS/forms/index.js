@@ -26,9 +26,24 @@ function regFormLogic (e)
         alert("mismatch between password and confirm password");
         errors++;
     }
-    clearFields();
     if (errors == 0)
-        alert("successfully registred")
+    {
+        let obj = {
+            name: name.value,
+            email: email.value,
+            password: pwd.value,
+            confirmedPassword:cpwd.value
+        }
+            console.log(name.value, email.value, pwd.value, cpwd.value)
+
+        console.log(obj)
+        localStorage.setItem('userDetails', JSON.stringify(obj))
+        console.log("successfully registed")
+        clearFields()
+        window.location.href="./login.html"
+
+    }
+
 
 }
 document.getElementById('e1').addEventListener('click', function ()

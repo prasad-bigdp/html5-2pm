@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Login Form</h1>
+    <form action="">
+        <input type="text" id="em">
+        <input type="password" name="" id="pd">
+        <button id="btn">Login</button>
+    </form>
+    <script>
+       const userDetails= JSON.parse(localStorage.getItem('userDetails'))
+       const email= document.getElementById('em')
+             const pwd = document.getElementById('pd')
+       document.getElementById('btn').addEventListener('click',function(){
+        console.log(userDetails.email,userDetails.password,email.value,pwd.value)
+        if((email.value==userDetails.email)&&(pwd.value==userDetails.password))
+        {
+            console.log("successfully logged in")
+            window.location.href="./dashboard.html"
+        }
+        else
+        {
+            alert("user details are invalid")
+        }
+       })
+    </script>
+</body>
+</html>

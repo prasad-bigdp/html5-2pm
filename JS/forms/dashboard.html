@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello <span id="name"></span></h1>
+    <script>
+        const name= document.getElementById('name')
+        const userDetails= JSON.parse(localStorage.getItem('userDetails'))
+        name.textContent=userDetails.name
+    </script>
+</body>
+</html>
