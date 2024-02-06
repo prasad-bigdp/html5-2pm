@@ -4,7 +4,16 @@ const pwd = document.getElementById("pwd")
 const cpwd = document.getElementById("cpwd")
 const Rform= document.getElementById("regForm")
 Rform.addEventListener('submit', regFormLogic)
-let errors=0
+let errors = 0
+window.addEventListener('DOMContentLoaded', function ()
+{
+    let pos = window.navigator.geolocation;
+    console.log(pos.getCurrentPosition((obj) =>
+    {
+        console.log("this is your position " + obj);
+        console.log(obj)
+    }))
+})
 let emailreg='/[A-Za-z0-9]+@[A-Za-z0-9]\.[A-Za-z]{3}/'
 function regFormLogic (e)
 {
