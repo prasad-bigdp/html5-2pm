@@ -16,6 +16,8 @@ function displayData (data)
     data.forEach((pro, index) =>
     {
         const prod = document.createElement('div');
+        const productLink= document.createElement('a')
+        productLink.href= `product.html?product=${encodeURIComponent(JSON.stringify(pro))}`
         prod.classList.add('product')
         const image = document.createElement('img');
         image.src=pro.thumbnail
@@ -26,8 +28,9 @@ function displayData (data)
         const addButton = document.createElement('button')
         addButton.textContent = "Add to Cart";
         addButton.setAttribute('data-cart', JSON.stringify(pro))
-        addButton.addEventListener('click',addCart)
-        prod.append(image,title,price,addButton)
+        addButton.addEventListener('click', addCart)
+        productLink.appendChild(title)
+        prod.append(image,productLink,price,addButton)
         productsDiv.appendChild(prod)
     })
 }

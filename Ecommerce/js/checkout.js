@@ -1,8 +1,8 @@
 const cartDetails = document.getElementById("cart-details")
 const cart = JSON.parse(localStorage.getItem("cart"))
 console.log(cart)
+const total = document.getElementById("total")
 displayData(cart)
-const total = 0
 function displayData(data) {
 	cartDetails.textContent = ""
 	data.forEach((pro, index) => {
@@ -21,6 +21,9 @@ function displayData(data) {
 		prod.append(image, title, price, deleteButton)
 		cartDetails.appendChild(prod)
 	})
+	const t = data.reduce((sum, pro) => sum + pro.price, 0)
+	console.log(t)
+	total.textContent ="$"+ t;
 }
 function remove(e) {
 	const index = e.target.getAttribute("data-id")

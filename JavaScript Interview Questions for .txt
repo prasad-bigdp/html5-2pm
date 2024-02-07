@@ -16,44 +16,7 @@ Object
 Undefined
 symbol
 logo
-00:25
 
-35:04
-
-
-
-
-EXPLORE MORE
-
-Learn Java Programming with Beginners Tutorial
-08:32
-
-Linux Tutorial for Beginners: Introduction to Linux Operating...
-01:35
-
-What is Integration Testing Software Testing Tutorial
-03:04
-
-What is JVM (Java Virtual Machine) with Architecture JAVA...
-02:24
-
-How to write a TEST CASE Software Testing Tutorial
-01:08
-
-Seven Testing Principles Software Testing
-05:01
-
-Linux File Permissions Commands with Examples
-13:29
-
-How to use Text tool in Photoshop CC Tutorial
-08:32
-
-What is NoSQL Database Tutorial
-02:00
-
-Important Linux Commands for Beginners Linux Tutorial
-15:03
 4. What is the use of isNaN function?
 isNan function returns true if the argument is not a number; otherwise, it is false.
 
@@ -1177,4 +1140,3 @@ Example:
     </body>
     </html>		
 
-These interview questions will also help in your viva(orals)
